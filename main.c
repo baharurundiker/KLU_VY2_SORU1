@@ -3,7 +3,7 @@
 
 
 
-int lineerArama(int kullanicidanDizi[], int diziBoyutuK, int arananElemanK) {//lineer arama için yazýlan fonksiyon.
+int lineerArama(int kullanicidanDizi[], int diziBoyutuK, int arananElemanK) {//lineer arama iÃ§in yazÄ±lan fonksiyon.
     int t;
     for (t = 0; t < diziBoyutuK; t++) {
         if (kullanicidanDizi[t] == arananElemanK) {
@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 	printf("************************************************\n");
 	
 	int diziBoyutuK,arananElemanK,t;
-//Gerekli tanýmlamalarý yaparak kullanýcýdan bu deðerleri istiyoruz.
+//Gerekli tanÄ±mlamalarÄ± yaparak kullanÄ±cÄ±dan bu deÄŸerleri istiyoruz.
 	
 	printf("Lutfen dizinin boyutunu giriniz\n");
 	scanf("%d",&diziBoyutuK);
@@ -38,17 +38,17 @@ int main(int argc, char *argv[]) {
     	printf("Dizinin %d. elemanini giriniz\n",t+1);
     	scanf("%d",&kullanicidanDizi[t]);
 	}
-	//Kullanýcýnýn girdiði dizinin elemanlarýný görmek için while döngüsü kullanarak yazdýrýyoruz.
+	//KullanÄ±cÄ±nÄ±n girdiÄŸi dizinin elemanlarÄ±nÄ± gÃ¶rmek iÃ§in while dÃ¶ngÃ¼sÃ¼ kullanarak yazdÄ±rÄ±yoruz.
 	printf("Dizinin elemanlari:\n");
     t = 0; 
     while (t < diziBoyutuK) {
     printf("%d ", kullanicidanDizi[t]);
     t++;
 }
-	//fonksiyonun içinde kullanýcýdan aldýðýmýz deðerleri koyuyoruz.
-	int sonuc = lineerArama(kullanicidanDizi, diziBoyutuK, arananElemanK);
+	//fonksiyonun iÃ§inde kullanÄ±cÄ±dan aldÄ±ÄŸÄ±mÄ±z deÄŸerleri koyuyoruz.
+	int cikanSonuc = lineerArama(kullanicidanDizi, diziBoyutuK, arananElemanK);
 
-    if (sonuc == 0) {
+    if (cikanSonuc == 0) {
         printf("\nEleman bulunamadi.\n");
     }
 	return 0;
